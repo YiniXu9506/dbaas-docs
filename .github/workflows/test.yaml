@@ -3,7 +3,7 @@ name: test workflow trigger
 on:
   push:
     branches:
-      - branchA
+      - updateCDNFresh
       - branchB
 
 jobs:
@@ -14,4 +14,4 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Print branch name
-      run: echo 'Branch A'
+      run: echo 'Branch updateCDNFresh'
