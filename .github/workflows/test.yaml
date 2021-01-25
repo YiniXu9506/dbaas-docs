@@ -14,4 +14,4 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Print branch name
-      run: echo 'Branch updateCDNFresh'
+      run: echo 'Branch updateCDNFresh' ${{ GITHUB_REF }}
